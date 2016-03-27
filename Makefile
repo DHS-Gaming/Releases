@@ -5,7 +5,7 @@ RELEASE = bin/release.sh "$(@)" "$(DATESTAMP)"
 all: testing
 
 clean:
-	rm -rfv /cygdrive/d/CYGWIN_RELEASES
+	rm -rfv /cygdrive/c/CYGWIN_RELEASES
 
 .PHONY: production
 production:
