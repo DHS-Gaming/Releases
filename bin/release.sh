@@ -3,7 +3,7 @@
 RELEASE="${1}"
 DATESTAMP="${2}"
 
-RELEASE_DIRECTORY="/cygdrive/d/CYGWIN_RELEASES/${RELEASE}/${DATESTAMP}"
+RELEASE_DIRECTORY="/cygdrive/c/CYGWIN_RELEASES/${RELEASE}/${DATESTAMP}"
 
 SOURCE_UPSTREAM="../Upstream/Altis-4.4r1"
 SOURCE_DAH_GAMING="../Altis"
@@ -33,8 +33,8 @@ for DIRECTORY in "Altis_Life.Altis" "life_server"; do
   # build the PBO files
   #
   "${PBO_CONSOLE}" \
-    -pack "D:\\CYGWIN_RELEASES\\${RELEASE}\\${DATESTAMP}\\${DIRECTORY}" \
-          "D:\\CYGWIN_RELEASES\\${RELEASE}\\${DATESTAMP}\\${DIRECTORY}.pbo"
+    -pack "C:\\CYGWIN_RELEASES\\${RELEASE}\\${DATESTAMP}\\${DIRECTORY}" \
+          "C:\\CYGWIN_RELEASES\\${RELEASE}\\${DATESTAMP}\\${DIRECTORY}.pbo"
 
   if [[ "production" == "${RELEASE}" ]]; then
       mkdir -pv "production/${DATESTAMP}"
